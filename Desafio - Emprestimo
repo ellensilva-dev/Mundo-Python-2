@@ -1,0 +1,14 @@
+"""Escreva um programa para aprovar o emprestimo bancario para a compra de uma casa
+o programa vai perguntar o valor da casa, o salario e em quantos anoas ele vai pagar
+Calcule o valor da prestação mensal, sabendo que ela nao pode exceder 30% do salario
+ou o emprestimo sera negado.
+"""
+valor_casa = float(input("Qual é o valor da casa? R$ "))
+salario = float(input("Qual é o seu salário? R$ "))
+anos = int(input("Em quantos anos você vai pagar? "))
+prestacao_mensal = valor_casa / (anos * 12)
+
+if prestacao_mensal > (salario * 0.3):
+    print(f"Empréstimo negado! A prestação mensal de R$ {prestacao_mensal:.2f} excede 30% do seu salário.")
+elif prestacao_mensal <= (salario * 0.3):
+    print(f"Empréstimo aprovado! A prestação mensal será de R$ {prestacao_mensal:.2f}.")

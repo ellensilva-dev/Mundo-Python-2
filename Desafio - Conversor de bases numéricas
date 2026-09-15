@@ -1,0 +1,15 @@
+print("Vamos converter números entre diferentes bases numéricas!")
+num = int(input("Digite um número inteiro: "))
+print("""Digite a base do número que você deseja converter
+[1] = Binário 
+[2] = Octal
+[3] = Hexadecimal""")
+opção = int(input("Sua opção: "))
+if opção == 1:
+    print(f"{num} em binário é {bin(num)}")
+elif opção == 2:
+    print(f"{num} em octal é {oct(num)}")
+elif opção == 3:
+    print(f"{num} em hexadecimal é {hex(num)}")
+else:
+    print("Opção inválida. Por favor, escolha 1, 2 ou 3.")

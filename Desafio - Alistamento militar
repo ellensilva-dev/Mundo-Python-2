@@ -1,0 +1,13 @@
+print("=-=" * 20)
+print("ALISTAMENTO MILITAR")
+print("Idade minima para alistamento: 18 anos")
+print("=-=" * 20)
+ano_nascimento = int(input("Digite o ano de nascimento: "))
+ano_atual = int(input("Digite o ano atual: "))
+idade = ano_atual - ano_nascimento
+if idade < 18:
+    print(f"Você ainda tem {idade} anos. Faltam {18 - idade} anos para o alistamento.")
+elif idade == 18: 
+    print(f"Meus parabens!! Vocês tem {idade} anos. Já pode se alistar. Procure a junta militar mais próxima para realizar o seu alistamento.")
+elif idade > 18:
+    print(f"Você tem {idade} anos. Já passou do tempo de se alistar. Procure a junta militar mais próxima para regularizar sua situação.")
